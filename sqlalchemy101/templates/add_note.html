@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="POST">
+    {{ form.hidden_tag() }}
+
+    <label>{{ form.title.label }}</label>
+    {{ form.title }}
+    {% for error in form.title.errors %}
+        <p style="color: red;">{{ error }}</p>
+    {% endfor %}
+
+    <label>{{ form.content.label }}</label>
+    {{ form.content }}
+    {% for error in form.content.errors %}
+        <p style="color: red;">{{ error }}</p>
+    {% endfor %}
+
+    <button type="submit">{{ form.submit.label }}</button>
+</form>
+
+<a href="{{ url_for('index') }}">⬅ Wróć</a>
+{% endblock %}
