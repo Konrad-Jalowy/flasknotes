@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="POST">
+    <label>Tytuł:</label>
+    <input type="text" name="title" value="{{ note['title'] }}" required>
+    <label>Treść:</label>
+    <textarea name="content" required>{{ note['content'] }}</textarea>
+    <button type="submit">Zapisz zmiany</button>
+</form>
+<a href="{{ url_for('index') }}">⬅ Wróć</a>
+{% endblock %}
