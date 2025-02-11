@@ -9,3 +9,17 @@ Using form builder for forms, validation and csrf.
 
 ## sqlalchemy101
 Same with wtf (form builder validation csrf) + sqlalchemy crud.
+
+## Note about venv
+to setup:
+```sh
+python -m venv venv
+```
+to start:
+```sh
+venv/bin/activate
+```
+to stop:
+```sh
+deactivate
+```
