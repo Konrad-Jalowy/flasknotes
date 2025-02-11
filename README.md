@@ -17,7 +17,7 @@ python -m venv venv
 ```
 to start:
 ```sh
-venv/bin/activate
+.\venv\Scripts\activate
 ```
 to stop:
 ```sh
